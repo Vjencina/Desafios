@@ -1,0 +1,10 @@
+
+public class FuncionExponencialEInversa {
+    public static void main(String[] args) {
+        //Exponencial neperiano y logaritmo neperiano
+        double x = Math.exp(1);
+        double y = Math.log(2.7172);
+        System.out.println("El exponencial neperiano de 1 es: "+ Math.exp(1) );
+        System.out.println("El logaritmo neperiano de 2.7172 es: "+ Math.log(2.7172));
+    }
+}
