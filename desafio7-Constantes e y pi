@@ -1,0 +1,11 @@
+package com.company;
+
+public class Constantes {
+    public static void main(String[] args){
+        System.out.println("El número e es: "+ Math.E );
+        System.out.println("El número pi es: "+ Math.PI);
+
+
+
+    }
+}
