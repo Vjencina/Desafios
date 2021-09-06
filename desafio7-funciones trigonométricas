@@ -1,0 +1,32 @@
+package com.company;
+
+public class FuncionesTrigonometricas {
+    public static void main(String[] args) {
+        //Para poder utilizar las funciones trigonometricas en Java , debemos transformarla en radianes
+
+        double resultado = 0;
+        double anguloEnGrados = 45;
+        double anguloEnRadianes = Math.toRadians(anguloEnGrados);
+
+        //seno del angulo de 45°
+        resultado = Math.sin(anguloEnRadianes);
+        System.out.println("El seno de "+ anguloEnGrados + " grados es: "+ resultado);
+
+        //coseno del angulo de 45°
+        resultado = Math.cos(anguloEnRadianes);
+        System.out.println("El coseno de "+ anguloEnGrados + " grados es: "+ resultado);
+
+        //tangente del angulo de 45°
+        resultado = Math.tan(anguloEnRadianes);
+        System.out.println("La tangente de "+ anguloEnGrados + " grados es: "+ resultado);
+
+        // Arco tangente de una variable
+        resultado = Math.atan(anguloEnRadianes);
+        System.out.println("El arco tengente de "+ anguloEnGrados + " grados es: "+ resultado);
+
+        //uso de atan2
+        double coordenadaX = 45;
+        double coordenadaY = 30;
+
+        System.out.println("El resultado de las coordenadas x=45 e Y= 30 es: "+ Math.atan2(coordenadaY,coordenadaY));
+
