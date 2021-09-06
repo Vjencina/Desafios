@@ -1,0 +1,13 @@
+package com.company;
+import java.util.Scanner;
+public class RaizScanner {
+    public static void main(String[] args) {
+    Scanner raiz = new Scanner(System.in);
+    System.out.println("Ingrese por favor un valor: ");
+    double resultado= Math.sqrt(raiz.nextDouble()) ;
+
+    System.out.println("La raiz es : "+ resultado);
+
+
+    }
+}
