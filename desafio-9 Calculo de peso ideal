@@ -1,0 +1,35 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class PesoIdeal {
+    public static void main(String[] args) {
+        //Este programa brindara al usuario el peso ideal, de acuerdo a su altura
+        System.out.println("*** Sea bienvenido ***");
+        Scanner dato = new Scanner(System.in);
+
+        float pesoHombre= 0,pesoMujer= 0, altura= 0;
+        String genero;
+        System.out.println("Por favor ingrese la altura en cm : ");
+        altura = dato.nextFloat();
+
+            System.out.println(" ingrese por favor el genero de la persona "+ "M o F: " );
+            genero = dato.next();
+            if(genero.equalsIgnoreCase("M")) {
+                System.out.println("Usted seleccionó la opción masculino.");
+                pesoHombre = (altura - 110);
+                System.out.println("El peso ideal con la altura de "+ altura +" cm para genero masculino es : "+ pesoHombre);
+
+            }
+            else if (genero.equalsIgnoreCase("F")) {
+                System.out.println("Usted seleccionó la opción femenino.");
+                pesoMujer = (altura - 120);
+                System.out.println("El peso ideal con la altura de "+ altura +" cm para genero femenino es : "+ pesoMujer);
+            }
+            else System.out.println("La opcion elegida no es correcta");
+
+
+
+    }
+
+    }
